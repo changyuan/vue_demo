@@ -8,6 +8,7 @@
 
 <script>
 import axios from 'axios'
+import { MessageBox } from 'mint-ui'
 export default {
   name: 'test',
   data () {
@@ -24,15 +25,30 @@ export default {
       })
     },
     handleClick: function () {
-      this.$toast('Hello world!')
+      // this.$messageBox('提示', '操作成功')
+      MessageBox({
+        title: '提示',
+        message: '确定执行此操作?',
+        showCancelButton: true
+      })
+
+      this.$toast({
+        message: '成功提示',
+        iconClass: 'icon icon-success',
+        duration: 2000,
+        position: 'bottom'
+      })
     }
   }
 }
 </script>
 
 
-<style scoped>
+<style>
 .class {
   color: orange;
+}
+.icon-success {
+  background-image: url('http://img.zcool.cn/community/010ab555ff9e6f32f875a132ccba71.jpg')
 }
 </style>
