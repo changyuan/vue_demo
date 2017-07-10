@@ -1,26 +1,23 @@
 <template>
-  <div class="player">
+  <div class="detail_player">
 
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'player',
+  name: 'detailPlayer',
   data () {
     return {
 
     }
   },
-  computed: {
+  methods: {
 
   },
-  methods: {
+  computed: {
 
   }
 }
 </script>
-
-<style>
-
-</style>

@@ -1,22 +1,18 @@
 <template>
-  <div class="player">
-
+  <div class="chart">
+     Chart
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'player',
+  name: 'chart',
   data () {
     return {
-
     }
   },
-  computed: {
-
-  },
   methods: {
-
   }
 }
 </script>

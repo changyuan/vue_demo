@@ -1,19 +1,17 @@
 <template>
-  <div class="player">
-
+  <div class="collect">
+    collect
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'player',
+  name: 'collect',
   data () {
     return {
 
     }
-  },
-  computed: {
-
   },
   methods: {
 

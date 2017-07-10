@@ -1,12 +1,13 @@
 <template>
-  <div class="player">
-
+  <div class="artist">
+    artist
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'player',
+  name: 'artist',
   data () {
     return {
 

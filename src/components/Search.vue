@@ -1,19 +1,17 @@
 <template>
-  <div class="player">
-
+  <div class="search">
+  
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'player',
+  name: 'search',
   data () {
     return {
 
     }
-  },
-  computed: {
-
   },
   methods: {
 

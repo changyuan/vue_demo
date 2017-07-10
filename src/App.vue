@@ -20,8 +20,14 @@
 </template>
 
 <script>
+import header from './components/Header'
+import player from './components/Player'
+import detailPlayer from './components/DetailPlayer'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    header, player, detailPlayer
+  }
 }
 </script>
 
