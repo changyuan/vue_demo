@@ -9,7 +9,9 @@ import Artist from '@/components/Artist'
 import Search from '@/components/Search'
 import Home from '@/components/Home'
 import Faq from '@/components/Faq'
+import VueMarkdown from 'vue-markdown'
 
+Vue.use(VueMarkdown)
 Vue.use(Router)
 
 export default new Router({

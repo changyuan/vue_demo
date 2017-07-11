@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../mq'
+@import '../style/mq'
 
 .pd
   padding: 2.5em 0 1.5em 0

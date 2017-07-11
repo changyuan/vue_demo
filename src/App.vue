@@ -70,7 +70,7 @@ export default {
 
 <style lang="sass">
 @import '../node_modules/_bulma@0.4.3@bulma/bulma.sass'
-@import 'mq'
+@import 'style/mq'
 
 .nav
   background-color: #383838

@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../mq'
+@import '../style/mq'
 
 .hero
   background-size: cover
