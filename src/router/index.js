@@ -7,6 +7,8 @@ import Chart from '@/components/Chart'
 import Collect from '@/components/Collect'
 import Artist from '@/components/Artist'
 import Search from '@/components/Search'
+import Home from '@/components/Home'
+import Faq from '@/components/Faq'
 
 Vue.use(Router)
 
@@ -23,7 +25,7 @@ export default new Router({
       component: Test
     },
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       component: Index
     },
@@ -46,6 +48,14 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: Search
+    },
+    {
+      path: '/faq',
+      component: Faq
+    },
+    {
+      path: '/',
+      component: Home
     }
   ]
 })

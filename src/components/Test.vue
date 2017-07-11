@@ -11,7 +11,7 @@ import axios from 'axios'
 import { MessageBox } from 'mint-ui'
 export default {
   name: 'test',
-  data () {
+  data() {
     return {
       msg: '123'
     }
@@ -48,6 +48,7 @@ export default {
 .class {
   color: orange;
 }
+
 .icon-success {
   background-image: url('http://img.zcool.cn/community/010ab555ff9e6f32f875a132ccba71.jpg')
 }

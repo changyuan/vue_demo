@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'detailPlayer',
+  name: 'detail-player',
   data () {
     return {
 

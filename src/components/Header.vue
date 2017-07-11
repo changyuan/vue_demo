@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import { Navbar, TabItem } from 'mint-ui'
+  // import { Navbar, TabItem } from 'mint-ui'
 //   import headLogo from './head_logo';
 //   import headNav from './head_nav'
 //   import rankHead from './rank-head'
