@@ -29,7 +29,9 @@ export default {
     faqs: [],
     errors: []
   }),
-
+  watch: {
+    '$route': 'faqs'
+  },
   created() {
     axios.get('http://jsonplaceholder.typicode.com/posts')
       .then(response => {

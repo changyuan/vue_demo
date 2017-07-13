@@ -14,9 +14,9 @@
         <div class="nav-right nav-menu" v-bind:class="{ 'is-active': isActive }">
 
           <router-link to="/" class="nav-item r-item">Home</router-link>
-          <router-link to="faq" class="nav-item r-item">Features</router-link>
-          <router-link to="faq" class="nav-item r-item">About</router-link>
-          <router-link to="faq" class="nav-item r-item">FAQ</router-link>
+          <router-link to="/demo" class="nav-item r-item">Features</router-link>
+          <router-link to="/test" class="nav-item r-item">About</router-link>
+          <router-link to="/faq" class="nav-item r-item">FAQ</router-link>
 
           <div class="nav-item">
             <p class="control">

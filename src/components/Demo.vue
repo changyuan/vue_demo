@@ -28,7 +28,7 @@
         <div>
             <ul
             >
-              <li v-for="(value, key,index) in object1">
+              <li v-for="(value, key,index) in object1" :key="index">
              {{ index }} {{ key }} : {{ value }}
               </li>
             </ul>
