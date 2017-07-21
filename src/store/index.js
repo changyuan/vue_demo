@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const store = Vuex.Store({
+const store = new Vuex.Store({
   state: {
     headNav: 'head-nav1'
   },
@@ -13,7 +13,9 @@ const store = Vuex.Store({
   },
 
   mutations: {
-
+    setHeadNav: (state, index) => {
+      state.headNav = 'head-nav' + index;
+    },
   },
 
   actions: {

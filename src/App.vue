@@ -1,103 +1,43 @@
+<!-- <template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view></router-view>
+  </div>
+</template>
+-->
+
 <template>
   <div id="app">
-    <div class="nav has-shadow">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item">MyCompany</a>
-        </div>
-        <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div class="nav-right nav-menu" v-bind:class="{ 'is-active': isActive }">
-
-          <router-link to="/" class="nav-item r-item">Home</router-link>
-          <router-link to="/demo" class="nav-item r-item">Features</router-link>
-          <router-link to="/test" class="nav-item r-item">About</router-link>
-          <router-link to="/faq" class="nav-item r-item">FAQ</router-link>
-
-          <div class="nav-item">
-            <p class="control">
-              <a class="button is-primary is-outlined">
-                <span class="icon">
-                  <i class="fa fa-download"></i>
-                </span>
-                <span>Join Now</span>
-              </a>
-            </p>
-          </div>
-
-        </div>
-      </div>
+    <vheader></vheader>
+    <div class="main">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
-
-    <router-view></router-view>
-
-    <footer class="footer is-primary">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <p>And this right here is a spiffy footer, where you can put stuff.</p>
-          </div>
-          <div class="column has-text-right">
-            <a class="icon" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <player></player>
+    <detail-player></detail-player>
   </div>
 </template>
 
 <script>
+import vheader from './components/Header'
+import player from './components/Player'
+import detailPlayer from './components/DetailPlayer'
 export default {
   name: 'app',
-  data () {
-    return {
-      isActive: false
-    }
-  },
-  methods: {
-    toggleNav: () => {  
-      this.isActive = !this.isActive
-    }
+  components: {
+    vheader, player, detailPlayer
   }
 }
 </script>
 
-
-<style lang="sass">
-@import '../node_modules/_bulma@0.4.3@bulma/bulma.sass'
-@import 'style/mq'
-
-.nav
-  background-color: #383838
-  a:hover
-    color: gray
-
-.nav-left a 
-  color: #fff
-  font-weight: bold
-
-a.r-item
-  color:#C1C1C1
-  padding: 0.5rem 1.75rem
-  +mobile
-    color: gray
-    &:hover
-      background-color: #F1F1F1
-
-.nav-toggle span
-  background-color: #C1C1C1
-
-footer
-  background-color: $primary !important
-  color: #fff
-
-  .icon
-    color: #fff
-    margin-left: 20px
-
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

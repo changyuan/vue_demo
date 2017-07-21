@@ -27,7 +27,7 @@ export default new Router({
       component: Test
     },
     {
-      path: '/index',
+      path: '/',
       name: 'index',
       component: Index
     },
@@ -56,8 +56,12 @@ export default new Router({
       component: Faq
     },
     {
-      path: '/',
+      path: '/home',
       component: Home
+    },
+    {
+      path: '/download',
+      component: Test
     }
   ]
 })
