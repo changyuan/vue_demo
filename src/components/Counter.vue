@@ -1,9 +1,10 @@
 <template>
-  <button v-on:click="increment">{{ counter }}</button>
+  <button v-on:click="increment">
+    {{ counter }}</button>
 </template>
 
 <script>
-  
+
 export default {
   name: 'button-counter',
   data: function () {

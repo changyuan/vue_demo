@@ -3,10 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import store from './store'
+import store from './store'
 // import axios from 'axios'
 import Mint from 'mint-ui'
 // import 'mint-ui/lib/style.css';
+import './assets/style.css'
 
 Vue.use(Mint)
 
@@ -41,7 +42,7 @@ Vue.directive('focus', {
 new Vue({
   el: '#app',
   router,
-  // store,
+  store,
   template: '<App/>',
   components: { App }
 })

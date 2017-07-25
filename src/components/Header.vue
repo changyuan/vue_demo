@@ -7,19 +7,24 @@
   
     <div class="header-nav">
       <mt-navbar v-model="headNav">
-        <mt-tab-item id="head-nav1" :href="addRouter('/')">新歌</mt-tab-item>
-        <mt-tab-item id="head-nav2" @click.native="addRouter('/chart')">排行榜</mt-tab-item>
-        <mt-tab-item id="head-nav3" @click.native="addRouter('/collect')">歌单</mt-tab-item>
-        <mt-tab-item id="head-nav4" @click.native="addRouter('/artist')">歌手</mt-tab-item>
-        <mt-tab-item id="head-nav5" @click.native="addRouter('/search')">搜索</mt-tab-item>
+        <mt-tab-item id="head-nav" @click.native="addRouter('')">新歌</mt-tab-item>
+        <mt-tab-item id="head-navchart" @click.native="addRouter('chart')">排行榜</mt-tab-item>
+        <mt-tab-item id="head-navcollect" @click.native="addRouter('collect')">歌单</mt-tab-item>
+        <mt-tab-item id="head-navartist" @click.native="addRouter('artist')">歌手</mt-tab-item>
+        <mt-tab-item id="head-navsearch" @click.native="addRouter('search')">搜索</mt-tab-item>
       </mt-navbar>
+      <!-- <router-link to="/">新歌</router-link>
+      <router-link to="/chart">排行榜</router-link>
+      <router-link to="/collect">歌单</router-link>
+      <router-link to="/artist">歌手</router-link>
+      <router-link to="/search">搜索</router-link> -->
     </div>
   </div>
 </template>
 
 <script>
 import { Navbar, TabItem } from 'mint-ui'
-// import { mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 export default {
   name: 'vheader',
   computed: {
@@ -28,7 +33,8 @@ export default {
   components: [Navbar, TabItem],
   methods: {
     addRouter(href) {
-      this.$router.push({ path: href })
+      this.$store.commit('setHeadNav',href);
+      this.$router.push({ path: "/" + href })
     }
   }
 }
@@ -36,12 +42,25 @@ export default {
 
 
 <style>
+.mint-navbar {
+  width: 100%;
+}
+
+.is-selected {
+  color: #ff5800;
+  box-shadow: inset 0 -2px 0 #ff5800
+}
+
+.mint-tab-item-label {
+  font-size: 16px;
+}
+
 .header-focus {
     width: 100%;
     height: 8rem;
     background-color: #FF5E00;
     position: relative;
-    z-index: 4;
+    z-index: 5;
     top: 0;
     left: 0;
 }

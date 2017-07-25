@@ -9,7 +9,7 @@ const store = new Vuex.Store({
     headNav: 'head-nav1'
   },
   getters: {
-
+    
   },
 
   mutations: {
