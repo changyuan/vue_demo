@@ -14,10 +14,10 @@
         <mt-tab-item id="head-navsearch" @click.native="addRouter('search')">搜索</mt-tab-item>
       </mt-navbar>
       <!-- <router-link to="/">新歌</router-link>
-      <router-link to="/chart">排行榜</router-link>
-      <router-link to="/collect">歌单</router-link>
-      <router-link to="/artist">歌手</router-link>
-      <router-link to="/search">搜索</router-link> -->
+        <router-link to="/chart">排行榜</router-link>
+        <router-link to="/collect">歌单</router-link>
+        <router-link to="/artist">歌手</router-link>
+        <router-link to="/search">搜索</router-link> -->
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
   components: [Navbar, TabItem],
   methods: {
     addRouter(href) {
-      this.$store.commit('setHeadNav',href);
+      this.$store.commit('setHeadNav', href);
       this.$router.push({ path: "/" + href })
     }
   }
@@ -46,9 +46,10 @@ export default {
   width: 100%;
 }
 
-.is-selected {
+.mint-navbar .mint-tab-item.is-selected {
+  border-bottom: 3px solid #ff5800;
   color: #ff5800;
-  box-shadow: inset 0 -2px 0 #ff5800
+  margin-bottom: 0px;
 }
 
 .mint-tab-item-label {
@@ -56,25 +57,25 @@ export default {
 }
 
 .header-focus {
-    width: 100%;
-    height: 8rem;
-    background-color: #FF5E00;
-    position: relative;
-    z-index: 5;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: #FF5E00;
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
 }
 
 .header-nav {
-    width: 100%;
-    height: 4rem;
-    box-shadow: 0 2px 3px rgba(0,0,0,.2);
-    background-color: rgba(249,249,249,.6);
-    background-image: linear-gradient(to bottom,rgba(249,249,249,.8),rgba(235,235,235,.8));
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    font-size: 1.6rem;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  background-color: rgba(249, 249, 249, .6);
+  background-image: linear-gradient(to bottom, rgba(249, 249, 249, .8), rgba(235, 235, 235, .8));
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  font-size: 1.6rem;
 }
 
 .header-focus .logo {

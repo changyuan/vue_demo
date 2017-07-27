@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    headNav: 'head-nav1'
+    headNav: 'head-nav'
   },
   getters: {
     

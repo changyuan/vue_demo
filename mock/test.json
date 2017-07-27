@@ -1,4 +1,19 @@
 {
-    "name" : "lucy",
-    "msg" : "tip msg"
+   "musics": [
+      {
+        "title": "追光者",
+        "description": "EXO",
+        "url": "http://3g.yaolan.com/jk/evaluation/201707271608385.html"
+      },
+      {
+        "title": "what u do?",
+        "description": "EXO",
+        "url": "http://3g.yaolan.com/jk/evaluation/201706221059229.html"
+      },
+      {
+        "title": "Forever",
+        "description": "EXO",
+        "url": "http://3g.yaolan.com/jk/evaluation/201707141036051.html"
+      }
+    ]
 }
