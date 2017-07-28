@@ -19,10 +19,10 @@
       <!-- </mt-cell> -->
       <ul>
         <li v-for="(item,index) in songList" @click.native="PlayAudio(index)" :key="index">
-          <p class="s_title">{{ item.title }}
+          <p class="s_title">{{ item.name }}
             <span class="isfee">付费</span>
           </p>
-          <p class="s_desc">{{ item.description }}</p>
+          <p class="s_desc">{{ item.singer }}</p>
         </li>
       </ul>
     </div>

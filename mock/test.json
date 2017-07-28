@@ -1,18 +1,18 @@
 {
    "musics": [
       {
-        "title": "追光者",
-        "description": "EXO",
+        "name": "追光者",
+        "singer": "EXO",
         "url": "http://3g.yaolan.com/jk/evaluation/201707271608385.html"
       },
       {
-        "title": "what u do?",
-        "description": "EXO",
+        "name": "what u do?",
+        "singer": "EXO",
         "url": "http://3g.yaolan.com/jk/evaluation/201706221059229.html"
       },
       {
-        "title": "Forever",
-        "description": "EXO",
+        "name": "Forever",
+        "singer": "EXO",
         "url": "http://3g.yaolan.com/jk/evaluation/201707141036051.html"
       }
     ]
